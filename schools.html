@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://www.youtube.com/watch?v=0si0qHYgK4A">
+    <a href="https://www.youtube.com/watch?v=0si0qHYgK4A">link to youtube</a>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script >
+        function getTheNameOfSchool(){
+            var mySchools=document.getElementsByTagName("p")
+            for(let i=4;i<mySchools.length;i++){
+                console.log(mySchools[i]);
+                if(i==0){
+                    document.getElementsByTagName("p")[5].innerHTML =mySchools[i].innerHTML ="RCA";
+                }
+            }
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <h3>this is the work of javascript</h3>
+    <p>G.S.GaHINI</p>
+    <p>E.P KIYENZI</p>
+    <p>RWANDA CODING ACADEMY</p>
+    <p>HARVARD UNIVERSITY</p>
+    <button onclick="getTheNameOfSchool()">Best schools</button>
+    <p></p>
+    <p></p>
+    <p></p>
+
+
+</body>
+</html>

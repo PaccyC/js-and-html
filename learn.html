@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- <button id="btn">Cancel redirect</button> -->
+<button id="btn" onclick="fun()" style="color: blue;">Geeks for Geeks</button>
+<button id="btn" onclick="stop()" >Stop</button>
+</body>
+<script>
+    let counter=0;
+    //seTimeout:run code with delay
+    const timerID =setTimeout(function(){
+        window.location.href="https:google.com"
+    },2000);
+    const btn=document.getElementById('btn');
+    btn.addEventListener('click',function(){
+        clearTimeout(timerID);
+        console.log('Redirect canceled');
+    })
+    setTimeout(function(){
+        counter++;
+        console.log(counter);
+    },2000)
+    function incrementByOne(){
+        counter++;
+        console.log(counter);
+    }
+    setTimeout(incrementByOne,2000)
+    // setInterval: repeatedly run codes
+const intervalID=   setInterval(function(){
+        incrementByOne();
+        if(counter==10){
+            clearInterval(intervalID);
+            console.log('Interval was cleared')
+        }
+    },1000);
+var t;
+function color(){
+    if(document.getElementById('btn').style.color=='blue'){
+        document.getElementById('btn').style.color=='green';
+    }
+    else{
+        document.getElementById('btn').style.color=='blue';
+    }
+}
+function fun(){
+    t=setTimeout(color,2000);
+}
+function stop(){
+    clearTimeout(t);
+}
+</script>
+</html>

@@ -1,0 +1,49 @@
+html,body{
+    background-color: whitesmoke;
+    align-items: center;
+
+}
+h1{
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#container{
+    position: absolute;
+    height: 450px;
+    width: 300px;
+    background-color: darkcyan;
+    right: 150px;
+    top: 150px;
+    border-radius: 20px;
+    display: block;
+}
+input{
+    margin-top: 25px;
+    height: 30px;
+    width: 150px;
+    align-items: center;
+
+
+}
+.find-state{
+    position: absolute;
+    background-color: azure;
+    color: rgb(255,0,0);
+     bottom: -100px;
+     left: 0%;
+     
+
+}
+.copyright{
+    position: absolute;
+    bottom: -100px;
+    left: 400px;
+    
+}
+ #animate{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: red;
+
+} 

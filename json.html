@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="addButton">Add to Storage</button>
+    <button id="seeButton">See Storage</button>
+   First: <input type="text" id="firstName">
+  Last:  <input type="text" id="lastName">
+    
+</body>
+ <script>
+    var myJSON={"first":"Laurence","last":"skevis"};
+    console.log(myJSON);
+    var myJSONstringfied=JSON.stringify(myJSON);
+    console.log(myJSONstringfied);
+    var myJSONparsed=JSON.parse(myJSONstringfied)
+    ;console.log(myJSONparsed);
+    var sendData=JSON.stringify(myJSONparsed);
+    console.log(sendData);
+    document.getElementById('addButton').addEventListener('click',addToStorage);
+    document.getElementById('seeButton').addEventListener('click',viewStorage);
+   
+    function viewStorage(){
+        let tempHolder=localStorage.getItem('tester')
+        console.log('clicked '+tempHolder);
+    }
+    function addToStorage(){
+        let tempValue=
+        document.getElementById('firstName').value;
+        
+       let myObj={"first":tempFirst,"last":tempLast}
+       var myJSON={"first":"Paccy","last":"Aime"}
+       
+        localStorage.setItem('tester',myJSON)
+        console.log('clicked '+ tempValue);
+    }
+    
+</script>
+</html>

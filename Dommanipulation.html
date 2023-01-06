@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <body>
+   
+
+     <div id="names">
+
+     <h1 id="Names">My names</h1>
+     <p class="AAP">Abayisenga</p>
+     <p>Pacifique</p>
+     <p>Aime</p>
+     <p>Abayo</p>
+     
+    </div>
+    <div id="div1"></div>
+    <script>
+        let paccy=document.createElement("p");
+        let textNode=document.createTextNode("paccy is the boy");
+        paccy.appendChild(textNode);
+        let displayText=document.getElementById("names");
+        displayText.appendChild(paccy);
+        // let Aime= document.createElement("h2")
+
+    //    let pacifique=document.createTextNode("My mother is the  best)
+        </script>
+        <title>JavaScript insertBefore()</title>
+    </head>
+    
+    <body>
+        <ul id="menu">
+            <li>Services</li>
+            <li>About</li>
+            <li id="contacts">Contact </li>
+        </ul>
+        <button type="button" onclick="dom()">learn dom</button>
+        <script>
+            let menu = document.getElementById('menu');
+            // create a new li node
+            let li = document.createElement('li');
+            li.textContent = 'Home';
+    
+            // insert a new node before the first list item
+            menu.insertBefore(li, menu.firstElementChild);
+            const e=document.querySelector("li:last-child")
+            e.parentElement.removeChild(e);
+            function geek(){
+var x=document.getElementById("contacts").nodeName;
+            console.log(x);
+            }
+            function ournames(){
+               let sub= document.getElementById("Names").style.color= "red";
+               let sub2=document.querySelector("Names");
+               sub2.this.style.backgroundColor ="Red"
+               document.getElementById("Names").innerHTML=style.backgroundColor="blue";
+            }
+            
+            function pa(){
+                let pi = document.getElementById("names");
+                console.log(pi.nodeType);
+                console.log(pi.nodeName);
+                let paccy=document.getElementById("names")
+                console.log(paccy.innerHTML)
+            }
+           function dom(){
+               
+        let good=document.getElementById("names").previousSibling.parentNode
+        console.log(good)
+           }
+        var myNodeList=document.querySelectorAll("p");
+       var i;
+       for(i=0;i<myNodeList.length;i++){
+        myNodeList[i].style.backgroundColor ="red";
+       }
+       var y= document.getElementById("menu").style.backgroundColor ="blue";
+       //removing nodes from the page
+       var parentDiv =document.getElementById("names");
+       var nodeToRemove =parentDiv.childNodes[2]
+       parentDiv.removeChild(nodeToRemove);
+       //using childnodes to get the elements in html
+       let pacc=document.childNodes[1]
+       .childNodes[2]
+    //    .childNodes[3]
+    let div2=document.getElementById("div1").previousSibling.previousSibling
+    let parent=document.getElementById("div1").parentNode.parentNode
+    console.log(parent)
+    console.log(div2)
+    
+
+          
+            
+
+
+        </script>
+        <button onfocus="this.style.backgroundColor='red'" onblur="this.style.backgroundColor='green'">names</button>
+        <button onclick="pa()">gh</button>
+</body>
+</html>
