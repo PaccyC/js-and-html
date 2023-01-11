@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;700&display=swap');
 html,body{
     background-color: whitesmoke;
     align-items: center;
@@ -6,6 +7,8 @@ html,body{
 h1{
     color: blue;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
 }
 #container{
     position: absolute;
@@ -29,21 +32,22 @@ input{
     position: absolute;
     background-color: azure;
     color: rgb(255,0,0);
-     bottom: -100px;
+     bottom: -500px;
      left: 0%;
      
 
 }
 .copyright{
     position: absolute;
-    bottom: -100px;
+    bottom: -500px;
     left: 400px;
     
 }
- #animate{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    background-color: red;
 
-} 
+@media screen and(max-width:600px){
+    h1{
+        font-size: 36px;
+        line-height: 50px;
+
+    }
+}
