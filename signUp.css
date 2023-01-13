@@ -28,6 +28,11 @@ body{
     
     
  }
+ h1{
+      color: white;
+     font-family: sans-serif;
+    display: flex;
+ }
 input[type=submit]{
 display: block;
 border-radius: 20px;
@@ -39,7 +44,6 @@ height: 40px;
 text-decoration: none;
 
 background-color: dodgerblue;
-
 }
 div label{
     margin: 5px 20px;
@@ -53,8 +57,12 @@ div label{
     align-items: center;
     text-align: center;
      margin: 25px 25px; 
-
-
-
-
 } 
+@media(max-width:600px){
+h1{
+    width: 100%;
+    flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+}
+}

@@ -9,6 +9,7 @@
 </head>
 <body>
     <body>
+        <h1>Sign Up to continue</h1>
         <div id="form-container">
             
             <form action="#" method="get">
@@ -35,4 +36,21 @@
     </form>
     </div> 
 </body>
+<script >
+    function changeColor(){
+    document.querySelector('#form-container').style.backgroundColor='lightblue';
+    // let secondsNbr=0;
+    // console.log(secondsNbr);
+    // secondsNbr++;
+    // if(secondsNbr==8){   
+    //     clearInterval(timerID);
+    // }
+}
+document.addEventListener('submit', ()=>{
+    changeColor()
+setTimeout(()=>{
+    document.querySelector('#container').style.backgroundColor='teal';
+} , 1000)
+});
+</script>
 </html>

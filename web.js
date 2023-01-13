@@ -1,19 +1,5 @@
 
-function changeColor(){
-    document.querySelector('#form-container').style.backgroundColor='lightblue';
-    // let secondsNbr=0;
-    // console.log(secondsNbr);
-    // secondsNbr++;
-    // if(secondsNbr==8){   
-    //     clearInterval(timerID);
-    // }
-}
-document.addEventListener('submit', ()=>{
-    changeColor()
-setTimeout(()=>{
-    document.querySelector('#container').style.backgroundColor='teal';
-} , 1000)
-});
+
 // let timerID=setInterval(document.addEventListener,1000);
 
 
