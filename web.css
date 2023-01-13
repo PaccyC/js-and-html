@@ -23,54 +23,7 @@ h1,h2{
 
     
 }
-#form-container{
-    
-    display: flex;
 
-    /* always on the main axis */
-    justify-content: center;
-    align-self: center;
-    height: 480px;
-    width: 300px;
-    background-color: darkcyan;
-    flex-basis: 200px;
-    border-radius: 20px;
-    /* always on the cross axis */
-    /* align-items: end;
-    /* flex-wrap: wrap; 
-     margin-top: 40px;  */
-    
-}
-input[type=submit]{
-display: block;
-border-radius: 20px;
-border: none ;
-text-align: center;
-}
-input[type=submit]:hover{
-height: 40px;
-text-decoration: none;
-
-background-color: dodgerblue;
-
-}
-div label{
-    margin: 5px 20px;
-}
- div input{
-    /* margin-top: 25px; */
-    height: 30px;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-     margin: 25px 25px; 
-
-
-
-
-}
 
 .find-state{
     /* position: absolute; */
@@ -149,10 +102,10 @@ padding: 0 30px;
 }
 .boxes .container{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between; 
 
 }
-/* .box{
+ .box{
     flex: 1;
     background: #0a51cc;
      border: 2px solid purple;
@@ -168,6 +121,7 @@ padding: 0 30px;
 .box i{
     margin-right: 10px;
 }
+
 @media(max-width:768px){
     .header .container{
         flex-direction: column;
@@ -180,7 +134,7 @@ padding: 0 30px;
         text-align: center;
 
     }
-}*/
+}
 .card_img{
     height: 40px;
     width: 40px;
