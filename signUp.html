@@ -10,9 +10,13 @@
 <body>
     <body>
         <h1>Sign Up to continue</h1>
+
+        <ul>
+            <li></li>
+        </ul>
         <div id="form-container">
             
-            <form action="#" method="get">
+            <form action="logedIn.html" method="get">
                 <div class="information">
                     <div>
                         <label for="fname">FirstName</label>
@@ -35,22 +39,9 @@
         </div>
     </form>
     </div> 
+    <h1 class="status"></h1>
+<button class="find-state">Find my State</button>
+<div class="copyright"> 
 </body>
-<script >
-    function changeColor(){
-    document.querySelector('#form-container').style.backgroundColor='lightblue';
-    // let secondsNbr=0;
-    // console.log(secondsNbr);
-    // secondsNbr++;
-    // if(secondsNbr==8){   
-    //     clearInterval(timerID);
-    // }
-}
-document.addEventListener('submit', ()=>{
-    changeColor()
-setTimeout(()=>{
-    document.querySelector('#container').style.backgroundColor='teal';
-} , 1000)
-});
-</script>
+<script src="web.js"></script>
 </html>

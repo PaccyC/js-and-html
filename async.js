@@ -1,11 +1,11 @@
-function one(call_two){
-    call_two();
-    console.log('step one has ended .Please call step 2');
-}
-const two =()=>{
-    console.log('Step 2');
-}
-one(two);
+// function one(call_two){
+//     call_two();
+//     console.log('step one has ended .Please call step 2');
+// }
+// const two =()=>{
+//     console.log('Step 2');
+// }
+// one(two);
 
 //production process
 let stocks={
@@ -50,13 +50,15 @@ let stocks={
 // order(0,production);
 
 //Promises
+
+
 let is_shop_open=true;
 let order=(time,work)=>{
 return new Promise( (resolve,reject)=>{
  if(is_shop_open){
     setTimeout(()=>{
     
-        resolve(work())
+        resolve(work)
     },time)
  }
  else{
@@ -69,7 +71,7 @@ order(2000,()=>{
     console.log(`${stocks.Fruits[0]} is picked`);
 })
 .then(()=>{
-    return  order(000,()=>{
+    return  order(0000,()=>{
         console.log('Producton has started');
     })
 })
@@ -90,8 +92,51 @@ order(2000,()=>{
 })
 .then(()=>{
     return order(2000,()=>{
-        console.log();
+        console.log("ice cream is ready to be served");
 
     })
 
 })
+
+.catch(()=>{
+    return order(0000,()=>{
+   console.log('Customer not found')
+    })
+})
+.finally(()=>{
+    console.log('End of the day,shop is closed');
+})
+
+// async/await
+// async function order(){
+//     try{
+//      await abc;
+//     }catch(error){
+//         console.log('It is not defined',error);
+//     }
+//     finally{
+//         console.log('The day has ended');
+//     }
+
+
+// }
+// order();
+let toppings_chice=()=>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+      resolve( console.log("Which topping do you love?"));
+        },3000)
+    })
+};
+async function kitchen(){
+    console.log("A")
+    console.log("B")
+    console.log("C")
+    await toppings_chice()
+    console.log("D")
+    console.log("E")
+}
+kitchen()
+console.log('Cleaning the dishes');
+console.log('Cleaning the tables');
+console.log('Taking others orders') ;

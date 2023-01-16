@@ -28,10 +28,17 @@ body{
     
     
  }
+ .find-state{
+    /* position: absolute; */
+    background-color: azure;
+    color: rgb(255,0,0);
+     /* bottom: -1300px;
+     left: 0%; */
+ }
  h1{
       color: white;
      font-family: sans-serif;
-    display: flex;
+    margin-left: 500px ;
  }
 input[type=submit]{
 display: block;
